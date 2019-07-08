@@ -1,0 +1,258 @@
+%------------------------------------------------------------------------------
+% Beginning of journal.tex
+%------------------------------------------------------------------------------
+%
+% AMS-LaTeX version 2 sample file for journals, based on amsart.cls.
+%
+%        ***     DO NOT USE THIS FILE AS A STARTER.      ***
+%        ***  USE THE JOURNAL-SPECIFIC *.TEMPLATE FILE.  ***
+%
+% Replace amsart by the documentclass for the target journal, e.g., tran-l.
+%
+\documentclass{amsart}
+
+%     If your article includes graphics, uncomment this command.
+\usepackage{graphicx}
+%\usepackage[altbullet]{lucidabr}
+%two lines below change font (font intalled manually (i.e. uploaded))
+%\usepackage{fontspec}
+%\setmainfont[Ligatures=TeX]{LucidaBrightRegular.ttf}
+%\usepackage{kpfonts}    % for nice fonts
+% option [light] for more slender documents
+\usepackage{color}  %for color of references
+\usepackage[dvipsnames]{xcolor} %for color of references
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage[pagebackref,colorlinks, citecolor=Brown,urlcolor=Brown]{hyperref}
+\usepackage{natbib}
+\usepackage{multicol}
+\usepackage{multirow}
+%\usepackage{lscape}
+\usepackage{pdflscape} %uncomment this  and comment above line to see the difference
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{dsfont}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{tikz,fullpage}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{bold-extra} %for bold small caps in the title
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+
+%    Absolute value notation
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+%    Blank box placeholder for figures (to avoid requiring any
+%    particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+  \parbox{\columnwidth}{\centering
+%    Set fboxsep to 0 so that the actual size of the box will match the
+%    given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+
+\begin{document}
+
+\title{Python for Social Scientists}
+
+%    Information for first author
+%\author{Author One}
+%    Address of record for the research reported here
+%\address{Department of Mathematics, Louisiana State University, Baton Rouge, Louisiana 70803}
+%    Current address
+%\curraddr{Department of Mathematics and Statistics, Case Western Reserve University, Cleveland, Ohio 43403}
+%\email{xyz@math.university.edu}
+%    \thanks will become a 1st page footnote.
+%\thanks{The first author was supported in part by NSF Grant \#000000.}
+
+%    Information for second author
+%\author{Author Two}
+%\address{Mathematical Research Section, School of Mathematical Sciences, Australian National University, Canberra ACT 2601, Australia}
+%\email{two@maths.univ.edu.au}
+%\thanks{Support information for the second author.}
+
+%    General info
+%\subjclass[2000]{Primary 54C40, 14E20; Secondary 46E25, 20C20}
+
+\date{Current version \today. Initial draft: July 4\textsuperscript{th}, 2019. \\
+Prepared by Arnaud Dy\`evre (\href{
+mailto:a.dyevre@lse.ac.uk}{a.dyevre@lse.ac.uk}) and Jialin Yi (\href{
+mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk})}
+
+%\dedicatory{This paper is dedicated to our advisors.}
+
+%\keywords{Differential geometry, algebraic geometry}
+
+%\begin{abstract}
+%This paper is a sample prepared to illustrate the use of the American
+%Mathematical Society's \LaTeX{} document class \texttt{amsart} and publication-specific variants of that class for AMS-\LaTeX{} version 2.
+%\end{abstract}
+
+\maketitle
+
+\begin{center}
+    \Large September 16\textsuperscript{th}-26\textsuperscript{th} \\
+    PhD Academy - LSE
+\end{center}
+
+\vspace{12pt}
+
+%\section*{This is an unnumbered first-level section head}
+%This is an example of an unnumbered first-level heading.
+
+%% The correct journal style for \specialsection is all uppercase; a known bug
+%% in amsart.cls prevents this, so input must be uppercase until it is fixed.
+%\specialsection*{This is a Special Section Head}
+%\specialsection*{THIS IS A SPECIAL SECTION HEAD}
+%This is an example of a special section head%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\footnote{Here is an example of a footnote. Notice that this footnote text is running on so that it can stand as an example of how a footnote with separate paragraphs should be written.
+%\par
+%And here is the beginning of the second paragraph.}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\section{Applications: Consumption Responses to Income \& Wealth Shocks}
+
+\subsection*{Practical details}
+
+%\begin{center}
+%\end{center}
+
+\begin{center}
+\begin{tabular}{| p{2.5cm} p{3.5cm} p{4.5cm} p{4.5cm} |} 
+\hline
+ \textbf{Date} & \textbf{Time} & \textbf{Place} & \textbf{Instructor} \\
+\hline
+ September 16\textsuperscript{th}- & 10:00am-1:00pm & PhD Academy training room & Jialin Yi \\
+ September 27\textsuperscript{th} & Everyday & Lionel Robbins building & PhD candidate,  \\
+     &   & 4\textsuperscript{th} floor &  Dept. of Statistics, LSE \\
+    & (with a 20min break)  &  &  \href{
+mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk} \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Course Description}
+
+This two-week course will provide an overview of the tools and methods required to undertake a collaborative research project in Python. It is designed for first- and second-year PhD students in the social sciences with the ambition to conduct quantitative research in Python. No knowledge of Python is required to take this course, although familiarity with elements of programming will help students get the most out of it. The class material was created for an audience familiar with Stata, MATLAB or R, looking to transition away from proprietary softwares and to be able to undertake all aspects of a research project within a single programming environment. \\
+
+By the end of the two weeks, students will be able to use GitHub to manage a collaborative research project, to use most of the econometrician's standard tools in Python, and they will have gained familiarity with standard machine learning techniques.
+
+\subsection*{Prerequisites}
+
+Previous knowledge of Python is not required but will greatly help. We expect the course to be fast-paced and the instructor's time will be better used to help students assimilating the class material. If you are unfamiliar with Python, we recommend to go through the three first lectures of \href{https://lectures.quantecon.org/py/}{QuantEcon}: \href{https://lectures.quantecon.org/py/index_learning_python.html}{``Introduction to Python''}, \href{https://lectures.quantecon.org/py/index_python_scientific_libraries.html}{``the Scientific Libraries''}, and \href{https://lectures.quantecon.org/py/index_advanced_python_programming.html}{``Advanced Python Programming''}. QuantEcon is a website created by economists Thomas J. Sargent and John Stachurski, teaching social scientists how to use Python for research. Extensive accompanying lecture notes are available in .pdf format \citep{sargent2019lectures}. No knowledge of version control, GitHub or machine learning is required.\\
+
+While not a required reading, ``Code and Data for the Social Sciences'' by \cite{gentzkow2014code} is a very informative resource. This is a 40-page long paper about best practices for collaborative research projects in the social sciences. Chapters 1, 3, 6, 7 and the appendix on code style are worth reading before the class starts.
+
+\subsection*{Computation}
+
+The course will consist of a combination of demonstrations and in-class exercises, so students are advised to bring their own laptops. If you need a laptop, the PhD Academy can provide you with an iRoam machine for the duration of the course.\\
+
+Please install the Python 3.7 Anaconda distribution ahead of the course. The iRoam laptops will already have Anaconda installed. Anaconda is a free, popular platform for data scientists working with Python. It comes with all the packages we will use in the class. You can download Anaconda from \href{https://www.anaconda.com/distribution/}{here}.
+
+\subsection*{Course Outline}
+
+[e] indicates class demonstrations or exercises\\
+
+\hl{[This section will be subject to a lot of changes as we design the course, please consider it as indicative only]} \\
+
+\begin{center}
+    \begin{tabular}{| p{3cm} | p{12cm} |}
+    \hline
+    \multicolumn{2}{|l|}{\textbf{Module 1: Version control for collaborative projects}} \\
+    \multicolumn{2}{|l|}{3 days} \\
+    \hline
+       Monday 16  & \textit{Version control (1)} \\
+            & \begin{itemize}
+                \item Principles of version control
+                \item Integration of version control into the social scientist's workflow
+                \item [[e]] Initialising a first Git repository and getting started with Commits, Pushes and Pulls
+            \end{itemize}
+            \\
+            & Recommended reading: chapters \hl{[TBC]} in \cite{gentzkow2014code} \\
+            & \\
+       Tuesday 17  & \textit{Version control (2)} \\
+            & \\
+       Wednesday 18 & \textit{Using third party online computing resources} \\
+            & \begin{itemize}
+                \item Connecting to Amazon Web Services, Google Cloud, LSE's Fabian
+            \end{itemize}
+            \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+        \begin{tabular}{| p{3cm} | p{12cm} |}
+    \hline
+    \multicolumn{2}{|l|}{\textbf{Module 2: Statistics and Econometrics}} \\
+    \multicolumn{2}{|l|}{5 days} \\
+    \hline
+    Thursday 19 & \textit{Basics of data handling} \\
+        & \begin{itemize}
+                \item Importing, cleaning, merging and appending data
+                \item Plotting data
+                \item [[e]] Importing and plotting data
+            \end{itemize}
+            \\
+    Friday 20 & \textit{OLS, GLS, IV and NLLS}\\
+    Monday 23 & \textit{Maximum Likelihood and Limited Dependent Variable Models}\\
+    Tuesday 24 & \textit{Time Series}\\
+    Wednesday 25 & \textit{GMM} \\
+\hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{| p{3cm} | p{12cm} |}
+    \hline
+    \multicolumn{2}{|l|}{\textbf{Module 3: Elements of Machine Learning}} \\
+    \multicolumn{2}{|l|}{1 day} \\
+    \hline
+    Thursday 26 & \textit{Introduction to the data scientist's toolkit} \\
+        & \begin{itemize}
+                \item PCA, Random Forest, Classification
+                \item [[e]] Exercise with \texttt{scikit-learn}
+            \end{itemize} \\
+    \hline
+    \end{tabular}
+
+\end{center}
+
+\begin{center}
+    
+\end{center}
+
+\subsection*{Resources}
+
+In class, the instructor will use Jupyter Notebooks for demonstrations, and students will use the Spyder scientific environment for hands-on exercises. Both can be used within Anaconda. All Notebooks, datasets, lecture notes and slides are available on the course GitHub page \hl{[TBC]}.
+
+\newpage 
+
+\bibliographystyle{ecta}
+\bibliography{PSSSyllabus}
+
+\end{document}
+
+%------------------------------------------------------------------------------
+% End of journal.tex
+%------------------------------------------------------------------------------
