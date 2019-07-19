@@ -1,5 +1,5 @@
 
-\documentclass{amsart}
+\documentclass{article}
 
 \usepackage{graphicx}
 %\usepackage[altbullet]{lucidabr}
@@ -38,11 +38,11 @@
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
-\theoremstyle{definition}
+%\theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{xca}[theorem]{Exercise}
-\theoremstyle{remark}
+%\theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 \numberwithin{equation}{section}
 
@@ -62,7 +62,7 @@
 
 \begin{document}
 
-\title{Python for Social Scientists}
+\title{\Large Python for Social Scientists}
 
 %    Information for first author
 %\author{Author One}
@@ -80,10 +80,12 @@
 %    General info
 %\subjclass[2000]{}
 
-\date{Current version \today. Initial draft: July, 2019. \\
-Prepared by Arnaud Dy\`evre (\href{
-mailto:a.dyevre@lse.ac.uk}{a.dyevre@lse.ac.uk}) and Jialin Yi (\href{
-mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk})}
+\date{\vspace{-1cm}}
+
+%\date{Current version \today. Initial draft: July, 2019. \\
+%Prepared by Arnaud Dy\`evre (\href{
+%mailto:a.dyevre@lse.ac.uk}{a.dyevre@lse.ac.uk}) and Jialin Yi (\href{
+%mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk})}
 
 %\dedicatory{}
 %\keywords{}
@@ -95,11 +97,11 @@ mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk})}
 \maketitle
 
 \begin{center}
-    \Large September 16\textsuperscript{th}-27\textsuperscript{th} \\
+    September 16\textsuperscript{th}-27\textsuperscript{th}, 2019 \\
     PhD Academy - LSE
 \end{center}
 
-\vspace{12pt}
+\vspace{1cm}
 
 %\section*{This is an unnumbered first-level section head}
 %This is an example of an unnumbered first-level heading.
@@ -120,48 +122,60 @@ mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk})}
 
 \subsection*{Practical details}
 
-%\begin{center}
-%\end{center}
+\vspace{0.5cm}
 
-\begin{center}
-\begin{tabular}{| p{3.25cm} p{3.5cm} p{4.5cm} p{3.75cm} |} 
-\hline
- \textbf{Dates} & \textbf{Time} & \textbf{Place} & \textbf{Instructor} \\
-\hline
- September 16\textsuperscript{th}- & 10:00am-1:00pm & PhD Academy training room & Jialin Yi \\
- September 27\textsuperscript{th} & Everyday & Lionel Robbins building & PhD candidate,  \\
-     &   & 4\textsuperscript{th} floor &  Dept. of Statistics, LSE \\
-    (no class on the 25\textsuperscript{th}) & (with a 20min break)  &  &  \href{
-mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk} \\
-\hline
+\begin{tabular}{lll}
+    \textbf{Dates} &  September 16\textsuperscript{th}-27\textsuperscript{th} & (no class on the 25\textsuperscript{th})\\
+    \textbf{Time} &  10:00am-1:00pm & \\
+    \textbf{Place} & PhD Academy training room & \\
+        & Lionel Robbins building, 4\textsuperscript{th} floor & \\
+    \textbf{Instructor} & Jialin Yi & \\
+     & PhD candidate, Department of Statistics, LSE & \\
+     & \href{
+mailto:j.yi8@lse.ac.uk}{j.yi8@lse.ac.uk} & \\
 \end{tabular}
-\end{center}
+
+\vspace{0.5cm}
 
 \subsection*{Course Description}
+
+\vspace{0.5cm}
 
 This two-week course will provide an overview of the tools and methods required to undertake a collaborative research project in Python. It is designed for first- and second-year PhD students in the social sciences with the ambition to conduct quantitative research in Python. No knowledge of Python is required to take this course, although familiarity with elements of programming will help students get the most out of it. The class material was created for an audience familiar with Stata, MATLAB or R, looking to transition away from proprietary softwares and to be able to undertake all aspects of a research project within a single programming environment. \\
 
 By the end of the two weeks, students will be able to use GitHub to manage a collaborative research project, to use most of the econometrician's standard tools in Python, and they will have gained familiarity with standard machine learning techniques.
 
+\vspace{0.5cm}
+
 \subsection*{Prerequisites}
 
-Previous knowledge of Python is not required but will greatly help. We expect the course to be fast-paced and the instructor's time will be better used to help students assimilating the class material. If you are unfamiliar with Python, we recommend to go through the three first lectures of \href{https://lectures.quantecon.org/py/}{QuantEcon}: \href{https://lectures.quantecon.org/py/index_learning_python.html}{``Introduction to Python''}, \href{https://lectures.quantecon.org/py/index_python_scientific_libraries.html}{``the Scientific Libraries''}, and \href{https://lectures.quantecon.org/py/index_advanced_python_programming.html}{``Advanced Python Programming''}. QuantEcon is a website created by economists Thomas J. Sargent and John Stachurski, teaching social scientists how to use Python for research. Extensive accompanying lecture notes are available in .pdf format \citep{sargent2019lectures}. No knowledge of version control, GitHub or machine learning is required.\\
+\vspace{0.5cm}
 
-While not a required reading, ``Code and Data for the Social Sciences'' by \cite{gentzkow2014code} is a very informative resource. This is a 40-page long paper about best practices for collaborative research projects in the social sciences. Chapters 1, 3, 6, 7 and the appendix on code style are worth reading before the class starts.\\
+Previous knowledge of Python is not required but will greatly help. We expect the course to be fast-paced and the instructor's time will be better used to help students assimilating the class material. If you are unfamiliar with Python, we recommend to go through the three first lectures of \href{https://lectures.quantecon.org/py/}{QuantEcon}: \href{https://lectures.quantecon.org/py/index_learning_python.html}{``Introduction to Python''}, \href{https://lectures.quantecon.org/py/index_python_scientific_libraries.html}{``the Scientific Libraries''}, and \href{https://lectures.quantecon.org/py/index_advanced_python_programming.html}{``Advanced Python Programming''}.\footnote{QuantEcon is a website created by economists Thomas J. Sargent and John Stachurski, teaching social scientists how to use Python for research. Extensive accompanying lecture notes are available in .pdf format \citep{sargent2019lectures}.} No knowledge of version control, GitHub or machine learning is required.\\
 
-Students should be familiar with the various statistical tools whose implementation in Python will be demonstrated during the class (see the Course Outli9ne section below).
+While not a required reading, ``Code and Data for the Social Sciences'' by \cite{gentzkow2014code} is a very informative resource. This 40-page long paper describes the best practices for collaborative research projects in the social sciences. Chapters 1, 3, 6, 7 and the appendix on code style are worth reading before the class starts.\\
+
+Students should be familiar with the various statistical tools whose implementation in Python will be demonstrated during the class (see the Course Outline section below).
+
+\vspace{0.5cm}
 
 \subsection*{Computation}
+
+\vspace{0.5cm}
 
 The course will consist of a combination of demonstrations and in-class exercises, so students are advised to bring their own laptops. If you need a laptop, the PhD Academy can provide you with an iRoam machine for the duration of the course.\\
 
 Please install the latest version of Python (3.7) through the Anaconda distribution, ahead of the course. The iRoam laptops will already have Anaconda installed. Anaconda is a free and popular platform for data scientists working with Python. It comes with all the packages we will use in the class. You can download Anaconda from \href{https://www.anaconda.com/distribution/}{here}.
 
+\vspace{0.5cm}
+
 \subsection*{Course Outline}
+
+\vspace{0.5cm}
 
 [e] indicates class demonstrations or exercises\\
 
-\hl{[This section will be subject to a lot of changes as we design the course, please consider it as indicative only]} \\
+\hl{[This section will be subject to some changes as we design the course, please consider it as indicative only]} \\
 
 \begin{center}
     \begin{tabular}{| p{2.5cm} | p{12.5cm} |}
@@ -170,21 +184,12 @@ Please install the latest version of Python (3.7) through the Anaconda distribut
     \multicolumn{2}{|l|}{3 days} \\
     \hline
        Monday 16  & \textit{Version control (1)} \\
-            & \begin{itemize}
-                \item Principles of version control
-                \item Integration of version control into the social scientist's workflow
-                \item [[e]] Initialising a first Git repository and getting started with Commits, Pushes and Pulls
-            \end{itemize}
-            \\
-            & Recommended reading: chapters \hl{[TBC]} in \cite{gentzkow2014code} \\
+      
             & \\
        Tuesday 17  & \textit{Version control (2)} \\
             & \\
        Wednesday 18 & \textit{Using third party online computing resources} \\
-            & \begin{itemize}
-                \item Connecting to Amazon Web Services, Google Cloud, LSE's Fabian
-            \end{itemize}
-            \\
+            & \\
     \hline
     \end{tabular}
 \end{center}
@@ -196,17 +201,17 @@ Please install the latest version of Python (3.7) through the Anaconda distribut
     \multicolumn{2}{|l|}{5 days} \\
     \hline
     Thursday 19 & \textit{Basics of data handling} \\
-        & \begin{itemize}
-                \item Importing, cleaning, merging and appending data
-                \item Plotting data
-                \item [[e]] Importing and plotting data
-            \end{itemize}
-            \\
+        & \\
     Friday 20 & \textit{OLS, GLS, IV and NLLS}\\
-    Monday 23 & \textit{Maximum Likelihood and Limited Dependent Variable Models}\\
+        & \\
+    Monday 23 & \textit{Maximum Likelihood and Limited Dependent Variable Models} \\
+        & \\
     Tuesday 24 & \textit{Time Series}\\
-    Tuesday 25 & No class this day\\
+        & \\
+    Tuesday 25 & --No class--\\
+        & \\
     Wednesday 26 & \textit{GMM} \\
+        & \\
 \hline
     \end{tabular}
 \end{center}
@@ -218,10 +223,7 @@ Please install the latest version of Python (3.7) through the Anaconda distribut
     \multicolumn{2}{|l|}{1 day} \\
     \hline
     Thursday 27 & \textit{Introduction to the data scientist's toolkit} \\
-        & \begin{itemize}
-                \item PCA, Random Forest, Classification
-                \item [[e]] Exercise with \texttt{scikit-learn}
-            \end{itemize} \\
+        & \\
     \hline
     \end{tabular}
 
@@ -233,7 +235,7 @@ Please install the latest version of Python (3.7) through the Anaconda distribut
 
 \subsection*{Resources}
 
-In class, the instructor will use Jupyter Notebooks for demonstrations, and students will use the Spyder scientific environment for hands-on exercises. Both can be used within Anaconda. All Notebooks, datasets, lecture notes and slides are available on the course GitHub page \hl{[TBC]}.
+In class, the instructor will use Jupyter Notebooks for demonstrations, and students will use the Spyder scientific environment for hands-on exercises. Both can be used within Anaconda. All Notebooks, datasets, lecture notes and slides will be available on the course GitHub page \hl{[TBC]}.
 
 \newpage 
 
