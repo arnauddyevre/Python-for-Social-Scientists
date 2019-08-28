@@ -15,6 +15,8 @@ The material is copyright of Jeni Brown (j.l.brown@lse.ac.uk), Arnaud Dyevre (a.
 
 ### Code
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
+
 All computer code is released under the MIT license.
 
 The MIT License (c) 2019 Jeni Brown, Arnaud Dyevre, Jialin Yi
