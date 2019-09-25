@@ -8,7 +8,7 @@ Authors: Jeni Brown, Arnaud Dyevre, Jialin Yi
 
 ## Copyright
 
-The material is copyright of Jeni Brown (j.l.brown@lse.ac.uk), Arnaud Dyevre (a.dyevre@lse.ac.uk) and Jialin Yi (j.yi8@lse.ac.uk)
+The material is copyright of the LSE, Jeni Brown (j.l.brown@lse.ac.uk), Arnaud Dyevre (a.dyevre@lse.ac.uk) and Jialin Yi (j.yi8@lse.ac.uk)
 
 ### Text
 
