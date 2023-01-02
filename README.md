@@ -3,12 +3,12 @@
 *Created 04/07/2019*
 *Last modified 12/09/2019*
 
-Authors: Jeni Brown, Arnaud Dyevre, Jialin Yi
+Authors: Arnaud Dyevre, Jialin Yi
 
 
 ## Copyright
 
-The material is copyright of the LSE, Jeni Brown (j.l.brown@lse.ac.uk), Arnaud Dyevre (a.dyevre@lse.ac.uk) and Jialin Yi (j.yi8@lse.ac.uk)
+The material is copyright of the LSE, Arnaud Dyevre (a.dyevre@lse.ac.uk) and Jialin Yi (j.yi8@lse.ac.uk)
 
 ### Text
 
